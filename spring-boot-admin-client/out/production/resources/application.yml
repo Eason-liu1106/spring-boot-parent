@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/user
+    username: root
+    password: root
+    druid:
+      aop-patterns: com.file.*
+  application:
+    name: sping-boot-admin-client
+  boot:
+    admin:
+      client:
+        url: http://localhost:8000
+server:
+  port: 8001
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"

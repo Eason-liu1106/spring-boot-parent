@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/user
+    username: root
+    password: root
+    druid:
+      aop-patterns: com.file.*
+      stat-view-servlet:
+        login-username: admin
+        login-password: admin
+      reset-stat-enable: false
+
+
+  application:
+    name: sping-boot-admin-server
+  mail:
+        host: smtp.163.com
+        username: liujialin1106@163.com
+        password: LIUjialintest
+
+  boot:
+    admin:
+      notify:
+        mail:
+          from: liujialin1106@163.com
+          to: liujialin1106@163.com
+
+server:
+  port: 8000
+

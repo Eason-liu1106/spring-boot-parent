@@ -1,0 +1,32 @@
+group 'com.eason'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'com.arenagod.gradle.MybatisGenerator'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+mybatisGenerator {
+    verbose = true
+    configFile = 'src/main/resources/mybatis/generatorConfig.xml'
+}
+
+configurations {
+    mybatisGenerator
+}
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+buildscript {
+    repositories {
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+    }
+    dependencies {
+        classpath "gradle.plugin.com.arenagod.gradle:mybatis-generator-plugin:1.4"
+
+    }
+}
