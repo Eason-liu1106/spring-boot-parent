@@ -3,6 +3,8 @@ package com.amqp.service.impl;
 import com.amqp.model.SenderDo;
 import com.amqp.service.AmqpService;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mail.model.MailDo;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,8 +56,12 @@ public class AmqpServiceImpl implements AmqpService {
     }
 
     @Override
-    public void sendEmail(MailDo mailDo) {
-        amqpTemplate.convertAndSend("exchange" , "email" , mailDo);
+    public void sendEmail(MailDo mailDo) throws JsonProcessingException {
+        //将Java对象匹配JSON结构
+        ObjectMapper mapper=new ObjectMapper();
+        String message=mapper.writeValueAsString(mailDo);
+        amqpTemplate.convertAndSend("exchange" , "email" , message.getBytes());
+
 
     }
 

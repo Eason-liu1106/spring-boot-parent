@@ -3,6 +3,7 @@ package com.amqp.service.impl;
 import com.amqp.model.SenderDo;
 import com.amqp.service.AmqpService;
 import com.amqp.service.AmqpTestService;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.mail.model.MailDo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,7 +20,7 @@ public class AmqpTestServiceImpl implements AmqpTestService {
     AmqpService amqpService;
 
     @Override
-    public void sendSimpleMessage(SenderDo senderDo) {
+    public void sendSimpleMessage(SenderDo senderDo) throws JsonProcessingException {
         MailDo mailDo = new MailDo();
        amqpService.sendEmail(mailDo);
     }

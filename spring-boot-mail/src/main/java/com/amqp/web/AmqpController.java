@@ -3,6 +3,7 @@ package com.amqp.web;
 import com.amqp.model.SenderDo;
 import com.amqp.service.AmqpService;
 import com.amqp.service.AmqpTestService;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.mail.model.MailDo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -57,7 +58,7 @@ private AmqpTestService amqpTestService;
 
     }
     @RequestMapping("mail")
-    public void mail(){
+    public void mail() throws JsonProcessingException {
         MailDo mailDo = new MailDo();
         mailDo.setFrom("liujialin1106@163.com");
         mailDo.setTo("liujialin1106@163.com");

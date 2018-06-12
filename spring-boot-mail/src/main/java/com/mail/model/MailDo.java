@@ -1,12 +1,14 @@
 package com.mail.model;
 
+import java.io.Serializable;
+
 /**
  * 描述:
  *
  * @Author LJL
  * @Date 2018/5/21 0021 13:52
  */
-public class MailDo {
+public class MailDo  implements Serializable{
     private String from;
     private String to;
     private String subject;

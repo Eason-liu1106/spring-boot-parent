@@ -1,6 +1,7 @@
 package com.quartz.job;
 
 import com.amqp.service.AmqpService;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.mail.model.MailDo;
 import com.utils.AmqpUtil;
 import org.quartz.Job;
@@ -42,7 +43,11 @@ public class SchedulerQuartzJob1 implements Job {
                 "</body>\n" +
                 "</html>";
         mailDo.setText(text);
-        amqpService.sendEmail(mailDo);
+        try {
+            amqpService.sendEmail(mailDo);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
         long time2= System.currentTimeMillis();
 
         System.out.println("结束："+time2);
