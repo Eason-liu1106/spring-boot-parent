@@ -27,6 +27,12 @@ spring:
       username: root
       password: root
       port: 5672
+      publisher-confirms: true
+      publisher-returns: true
+      listener:
+        simple:
+          acknowledge-mode: manual
+          prefetch: 1
       
 server:
   port: 8002

@@ -61,6 +61,19 @@ public class MailDo  implements Serializable{
         return subject;
     }
 
+    @Override
+    public String toString() {
+        return "MailDo{" +
+                "from='" + from + '\'' +
+                ", to='" + to + '\'' +
+                ", subject='" + subject + '\'' +
+                ", text='" + text + '\'' +
+                ", filePath='" + filePath + '\'' +
+                ", imgPath='" + imgPath + '\'' +
+                ", rscId='" + rscId + '\'' +
+                '}';
+    }
+
     public void setSubject(String subject) {
         this.subject = subject;
     }

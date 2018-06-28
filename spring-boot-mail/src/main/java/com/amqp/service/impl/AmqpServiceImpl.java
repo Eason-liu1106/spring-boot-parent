@@ -58,9 +58,9 @@ public class AmqpServiceImpl implements AmqpService {
     @Override
     public void sendEmail(MailDo mailDo) throws JsonProcessingException {
         //将Java对象匹配JSON结构
-        ObjectMapper mapper=new ObjectMapper();
-        String message=mapper.writeValueAsString(mailDo);
-        amqpTemplate.convertAndSend("exchange" , "email" , message.getBytes());
+//        ObjectMapper mapper=new ObjectMapper();
+//        String message=mapper.writeValueAsString(mailDo);
+        amqpTemplate.convertAndSend("exchange" , "email" , mailDo);
 
 
     }

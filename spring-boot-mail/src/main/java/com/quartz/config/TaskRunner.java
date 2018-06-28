@@ -37,7 +37,7 @@ public class TaskRunner implements ApplicationRunner {
     		quartz.setJobGroup("test");
     		quartz.setDescription("测试任务");
     		quartz.setJobClassName("com.quartz.job.SchedulerQuartzJob1");
-    		quartz.setCronExpression("0/10 * * * * ?");
+    		quartz.setCronExpression("0/2 * * * * ?");
    	        Class cls = Class.forName(quartz.getJobClassName()) ;
    	        cls.newInstance();
    	        //构建job信息

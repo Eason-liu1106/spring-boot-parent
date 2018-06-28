@@ -3,13 +3,11 @@ package com.quartz.job;
 import com.amqp.service.AmqpService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.mail.model.MailDo;
-import com.utils.AmqpUtil;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 /**
  * 描述:
@@ -49,8 +47,6 @@ public class SchedulerQuartzJob1 implements Job {
             e.printStackTrace();
         }
         long time2= System.currentTimeMillis();
-
-        System.out.println("结束："+time2);
         System.out.println("耗时："+(time2-time1));
         after();
     }
