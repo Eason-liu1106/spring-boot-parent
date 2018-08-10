@@ -25,4 +25,7 @@ dependencies {
     compile 'org.apache.poi:poi:3.17'
     compile 'org.apache.poi:poi-ooxml:3.17'
     compile 'org.apache.poi:poi-ooxml-schemas:3.17'
+    compile group: 'com.itextpdf', name: 'itextpdf', version: '5.5.13'
+    testCompile group: 'com.itextpdf', name: 'font-asian', version: '7.1.1'
+
 }

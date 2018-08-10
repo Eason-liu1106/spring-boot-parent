@@ -22,6 +22,10 @@
     <orderEntry type="module" module-name="core_main" />
     <orderEntry type="library" name="Gradle: de.codecentric:spring-boot-admin-starter-client:2.0.0" level="project" />
     <orderEntry type="library" name="Gradle: net.glxn.qrgen:javase:2.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.poi:poi-ooxml:3.17" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.poi:poi:3.17" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.poi:poi-ooxml-schemas:3.17" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:itextpdf:5.5.13" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-mail:2.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-web:2.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-thymeleaf:2.0.2.RELEASE" level="project" />
@@ -39,9 +43,6 @@
     <orderEntry type="library" name="Gradle: ognl:ognl:3.2.6" level="project" />
     <orderEntry type="library" name="Gradle: io.springfox:springfox-swagger-ui:2.8.0" level="project" />
     <orderEntry type="library" name="Gradle: io.springfox:springfox-swagger2:2.8.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.poi:poi-ooxml:3.17" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.poi:poi:3.17" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.poi:poi-ooxml-schemas:3.17" level="project" />
     <orderEntry type="library" name="Gradle: com.alibaba:druid-spring-boot-starter:1.1.9" level="project" />
     <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:5.1.38" level="project" />
     <orderEntry type="library" name="Gradle: org.mybatis:mybatis:3.4.6" level="project" />
@@ -49,6 +50,10 @@
     <orderEntry type="library" name="Gradle: com.google.zxing:javase:3.1.0" level="project" />
     <orderEntry type="library" name="Gradle: net.glxn.qrgen:core:2.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jfree:jfreesvg:2.1" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-collections4:4.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.virtuald:curvesapi:1.04" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlbeans:xmlbeans:2.6.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-context-support:5.0.6.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-webmvc:5.0.6.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-actuator-autoconfigure:2.0.2.RELEASE" level="project" />
@@ -90,15 +95,12 @@
     <orderEntry type="library" name="Gradle: com.zaxxer:HikariCP:2.7.9" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Gradle: org.mapstruct:mapstruct:1.2.0.Final" level="project" />
-    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.commons:commons-collections4:4.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.virtuald:curvesapi:1.04" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.xmlbeans:xmlbeans:2.6.0" level="project" />
     <orderEntry type="library" name="Gradle: com.alibaba:druid:1.1.9" level="project" />
     <orderEntry type="library" name="Gradle: com.github.pagehelper:pagehelper:5.1.4" level="project" />
     <orderEntry type="library" name="Gradle: org.jolokia:jolokia-core:1.5.0" level="project" />
     <orderEntry type="library" name="Gradle: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.zxing:core:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: stax:stax-api:1.0.1" level="project" />
     <orderEntry type="library" name="Gradle: javax.activation:activation:1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.5" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.5" level="project" />
@@ -111,7 +113,6 @@
     <orderEntry type="library" name="Gradle: org.jboss.logging:jboss-logging:3.3.2.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-jcl:5.0.6.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
-    <orderEntry type="library" name="Gradle: stax:stax-api:1.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.github.jsqlparser:jsqlparser:1.0" level="project" />
     <orderEntry type="library" name="Gradle: io.micrometer:micrometer-core:1.0.4" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.10" level="project" />
